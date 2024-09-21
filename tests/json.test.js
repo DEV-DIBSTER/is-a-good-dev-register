@@ -54,8 +54,6 @@ test('Check if JSON file follows format', () => {
 test('Check if JSON file matches the value name', () => {
   const passed = getFileName(process.env.FILES, data);
 
-  console.log(process.env.FILES);
-
   let fileNameMessage = passed === true ? "File name matches target.RECORD_TYPE." : "File name does not match any target.RECORD_TYPE.";
 
   core.setOutput('fileNameMessage', fileNameMessage);
